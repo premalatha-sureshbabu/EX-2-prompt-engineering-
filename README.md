@@ -1,91 +1,185 @@
-# EX-5-prompt-engineering-Comparative Analysis of different types of Prompting patterns and explain with Various Test scenerios
+# EX-5 Comparative Analysis of different types of Prompting patterns and explain with Various Test scenerios
 
-## Experiment:
+# Experiment:
 Test and compare how different pattern models respond to various prompts (broad or unstructured) versus basic prompts (clearer and more refined) across multiple scenarios. 
      Analyze the quality, accuracy, and depth of the generated responses.
 
-## Experiment Objective:
-To test and compare how different prompting patterns—broad/unstructured vs. basic/refined—affect the performance of language models in generating responses. The focus is on assessing the quality, accuracy, and depth of responses across varied scenarios.
+# Objective
+To compare how different prompting patterns affect the performance of AI models in terms of quality, accuracy, and depth of responses.
 
-### Prompting Patterns Overview:
+# 1.Introduction to Prompting Patterns
 
-Broad/Unstructured Prompts: Open-ended and general; lack specific direction.
+Prompting refers to how a question or instruction is framed for an AI model. There are different types:
 
-Basic/Refined Prompts: Clear, concise, and goal-oriented; contain sufficient detail to guide the response.
+### a. Broad or Unstructured Prompt
 
-### Test Scenarios and Comparative Output:
+Vague or open-ended.
 
-### Scenario 1: General Knowledge
 
-Broad: "Tell me about AI."
+Gives AI freedom but may lead to less focused responses.
 
-Refined: "Explain how AI is applied in medical diagnostics."
 
-Result:
+Example: "Tell me about climate change."
 
-Broad prompt leads to a high-level overview lacking context.
+### b. Basic Prompt
 
-Refined prompt yields a detailed, application-specific explanation.
+Clear and direct.
 
-### Scenario 2: Creative Writing
 
-Broad: "Write a story."
+Focuses the AI on a specific task or question.
 
-Refined: "Write a science fiction story involving a time machine and ethical dilemmas."
 
-Result:
+Example: "Explain the causes of climate change in three bullet points."
 
-Broad prompt produces an aimless or generic narrative.
 
-Refined prompt produces a structured, engaging, and creative story.
+# 2.Prompting Pattern Comparison Framework
 
-### Scenario 3: Coding Task
+![image](https://github.com/user-attachments/assets/89c46e03-104b-4536-9f0d-c8a8fec3b359)
 
-Broad: "Write Python code."
+# 3.Test Scenarios and Results
 
-Refined: "Write a Python function that checks if a number is prime."
+## Scenario 1: Educational Topic
 
-Result:
+### Prompt A (Broad):
+"Explain photosynthesis."
 
-Broad prompt outputs unrelated or trivial code.
+### Response Quality:
 
-Refined prompt gives concise, accurate, and directly useful code.
+-Detailed but lengthy
 
-### Scenario 4: Opinion-Based Response
 
-Broad: "What do you think of education?"
+-Includes processes, formulas, and examples
 
-Refined: "What are the pros and cons of remote learning in universities?"
 
-Result:
+-Sometimes includes unnecessary info
 
-Broad prompt leads to vague generalities.
+### Prompt B (Basic):
 
-Refined prompt gives a balanced and evidence-based analysis.
+"Explain the process of photosynthesis in 3 steps suitable for 6th-grade students."
 
-### Scenario 5: Troubleshooting
+### Response Quality:
 
-Broad: "Fix my code."
+-More focused and age-appropriate
 
-Refined: "Why does my Python code throw a TypeError when summing a list of integers?"
 
-Result:
+-Easier to follow
 
-Broad prompt results in unclear or generic responses.
 
-Refined prompt gives a specific solution and explanation.
+-Higher accuracy for the target audience
 
-# OUTPUT
-![image](https://github.com/user-attachments/assets/578e1bd6-cfbd-48ae-9ba5-af4657237e2a)
+
+
+## Scenario 2: Creative Writing
+
+### Prompt A (Broad):
+
+"Write a story about a robot."
+
+### Response Quality:
+
+-Highly imaginative
+
+
+-Varies with creativity
+
+
+-Lacks clear structure sometimes
+
+### Prompt B (Basic):
+
+"Write a 3-paragraph story about a robot who learns to feel emotions."
+
+### Response Quality:
+
+-More structured
+
+
+-Focuses on emotional growth
+
+
+-Better character development
+
+
+## Scenario 3: Technical Explanation
+
+### Prompt A (Broad):
+
+"Tell me about machine learning."
+
+### Response Quality:
+
+-General explanation
+
+
+-Mix of definitions and applications
+
+
+-May miss out on key concepts
+
+### Prompt B (Basic):
+
+"Explain supervised and unsupervised learning in machine learning with one example each."
+
+### Response Quality:
+
+-Targeted response
+
+
+-Accurate examples
+
+
+-More useful for academic understanding
+
+
+### Scenario 4: Opinion-Based Prompt
+
+### Prompt A (Broad):
+
+"What do you think of online education?"
+
+### Response Quality:
+
+-Balanced pros and cons
+
+
+-Variable depth depending on model
+
+
+-Can become too general
+
+### Prompt B (Basic):
+
+"List 2 benefits and 2 drawbacks of online education for university students."
+
+### Response Quality:
+
+-Straightforward, clear points
+
+
+-Easy to compare and analyze
+
+
+-More relevant for discussions
+
+
+
+
+# 4. Summary of Findings
+
+
+![image](https://github.com/user-attachments/assets/36c87368-4c9e-4693-87bc-f356b1c28cee)
+
+
+# 5. Conclusion
+
+-Broad Prompts are useful for creative and exploratory responses, but may lack structure.
+
+
+-Basic Prompts produce more accurate and focused outputs, suitable for technical, educational, or professional contexts.
+
+
+-The choice of prompting pattern should depend on the goal of the interaction—whether creative generation or informative clarity is the priority.
 
 
 # RESULT
-Through structured testing across multiple scenarios, refined (basic) prompts consistently outperformed broad (unstructured) prompts in terms of:
-
-    Quality – more coherent and context-specific outputs
-
-    Accuracy – fewer misunderstandings and better relevance
-
-    Depth – richer, more detailed, and meaningful responses
-
-Refined prompts led to precise, actionable content, especially in technical, coding, and analytical tasks. Broad prompts, while flexible, often resulted in vague or overly generic responses. This demonstrates the importance of clear intent and specificity when interacting with language models.
+A comparative analysis highlighting the importance of prompt refinement for improving AI-generated responses.
