@@ -7,167 +7,61 @@ Test and compare how different pattern models respond to various prompts (broad 
 # Objective
 To compare how different prompting patterns affect the performance of AI models in terms of quality, accuracy, and depth of responses.
 
-# 1.Introduction to Prompting Patterns
+### Scenario: "I am struggling with managing my time effectively. Can you help me improve my time management skills?"
+1. The Persona Pattern
+Prompt: "Imagine you are a productivity coach, how would you help someone improve their time management skills?"
 
-Prompting refers to how a question or instruction is framed for an AI model. There are different types:
+Output: "As a productivity coach, I would first start by understanding your goals and challenges. We would then identify time-wasting activities, prioritize your tasks, and create a schedule that balances productivity with rest. Using tools like the Pomodoro technique and setting specific, achievable goals for each day would help keep you on track."
 
-### a. Broad or Unstructured Prompt
+2. Zero-shot Prompting
+Prompt: "Help me improve my time management skills."
 
-Vague or open-ended.
+Output: "To improve time management, you should start by organizing your day into blocks of focused work and scheduled breaks. Prioritize tasks based on importance and deadlines. Additionally, setting goals each day and evaluating your progress at the end of the day can help maintain productivity."
 
+3. Few-shot Prompting
+Prompt: "Here are some time management strategies:
 
-Gives AI freedom but may lead to less focused responses.
+Prioritize your tasks
 
+Break large tasks into smaller chunks
 
-Example: "Tell me about climate change."
+Set specific deadlines Can you suggest more strategies?"
 
-### b. Basic Prompt
+Output: "Certainly! You could also try using the 'Two-Minute Rule'—if a task takes less than two minutes, do it immediately. Another strategy is 'time blocking,' where you assign specific time slots to certain tasks to prevent multitasking. Lastly, reflect on your work weekly to assess and adjust your strategies."
 
-Clear and direct.
+4. Chain-of-Thought Prompting
+Prompt: "What steps should I take to improve time management?"
 
+Output: "First, assess how you spend your time daily. Next, identify which activities are unproductive or time-consuming. Once you know what to avoid, prioritize your tasks by importance. Afterward, set realistic goals, and schedule time for each task. Lastly, regularly check in with your progress to adjust as needed."
 
-Focuses the AI on a specific task or question.
+5. Active-prompt
+Prompt: "Give me a list of specific actions to improve my time management skills."
 
+Output: "1. List all your tasks and categorize them into urgent and non-urgent. 2. Set daily, weekly, and monthly goals. 3. Block out time for focused work and relaxation. 4. Track your time using an app or calendar. 5. Reflect at the end of each day and week to assess progress and adjust accordingly."
 
-Example: "Explain the causes of climate change in three bullet points."
+6. Directional Stimulus Prompting
+Prompt: "You're about to start a busy day. What should you do first to manage your time effectively?"
 
+Output: "Begin by making a list of all your tasks for the day. Then, prioritize them based on deadlines and importance. Allocate time slots for each task and avoid multitasking. Start with the most important task, and break it into smaller tasks to avoid feeling overwhelmed."
 
-# 2.Prompting Pattern Comparison Framework
+7. Graph Prompting
+Prompt: "Create a visual graph that helps me manage my time better."
 
-![image](https://github.com/user-attachments/assets/89c46e03-104b-4536-9f0d-c8a8fec3b359)
+Output: "The graph could look like this: a bar chart with 'Time Spent' on the y-axis and 'Task Categories' on the x-axis. The categories could include 'Work,' 'Rest,' 'Personal Tasks,' etc. You would plot time spent in each category to visually identify time allocation and adjust accordingly."
 
-# 3.Test Scenarios and Results
+8. Reverse-Engineered Prompt Generation
+Prompt: "Tell me the steps to improve time management, starting from the outcome of having a balanced, productive day."
 
-## Scenario 1: Educational Topic
+Output: "To achieve a balanced and productive day, you must first plan your day ahead of time. Identify your goals, schedule focused work sessions, and ensure you leave time for breaks. You need to reflect on your progress each day, and at the end of the week, review your accomplishments and adjust your strategy accordingly."
 
-### Prompt A (Broad):
-"Explain photosynthesis."
+9. Multilingual and Multimodal Prompt Engineering
+Prompt: "Can you explain time management strategies in both English and Spanish?"
 
-### Response Quality:
+Output:
 
--Detailed but lengthy
+English: "Effective time management includes setting clear goals, prioritizing tasks, and scheduling regular breaks. The Pomodoro technique and time blocking are great methods to stay focused."
 
-
--Includes processes, formulas, and examples
-
-
--Sometimes includes unnecessary info
-
-### Prompt B (Basic):
-
-"Explain the process of photosynthesis in 3 steps suitable for 6th-grade students."
-
-### Response Quality:
-
--More focused and age-appropriate
-
-
--Easier to follow
-
-
--Higher accuracy for the target audience
-
-
-
-## Scenario 2: Creative Writing
-
-### Prompt A (Broad):
-
-"Write a story about a robot."
-
-### Response Quality:
-
--Highly imaginative
-
-
--Varies with creativity
-
-
--Lacks clear structure sometimes
-
-### Prompt B (Basic):
-
-"Write a 3-paragraph story about a robot who learns to feel emotions."
-
-### Response Quality:
-
--More structured
-
-
--Focuses on emotional growth
-
-
--Better character development
-
-
-## Scenario 3: Technical Explanation
-
-### Prompt A (Broad):
-
-"Tell me about machine learning."
-
-### Response Quality:
-
--General explanation
-
-
--Mix of definitions and applications
-
-
--May miss out on key concepts
-
-### Prompt B (Basic):
-
-"Explain supervised and unsupervised learning in machine learning with one example each."
-
-### Response Quality:
-
--Targeted response
-
-
--Accurate examples
-
-
--More useful for academic understanding
-
-
-### Scenario 4: Opinion-Based Prompt
-
-### Prompt A (Broad):
-
-"What do you think of online education?"
-
-### Response Quality:
-
--Balanced pros and cons
-
-
--Variable depth depending on model
-
-
--Can become too general
-
-### Prompt B (Basic):
-
-"List 2 benefits and 2 drawbacks of online education for university students."
-
-### Response Quality:
-
--Straightforward, clear points
-
-
--Easy to compare and analyze
-
-
--More relevant for discussions
-
-
-
-
-# 4. Summary of Findings
-
-
-![image](https://github.com/user-attachments/assets/36c87368-4c9e-4693-87bc-f356b1c28cee)
+Spanish: "La gestión efectiva del tiempo incluye establecer metas claras, priorizar tareas y programar descansos regulares. La técnica Pomodoro y el bloque de tiempo son excelentes métodos para mantenerse enfocado."
 
 
 # 5. Conclusion
